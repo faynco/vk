@@ -1,0 +1,91 @@
+.page-header {
+	height: 60px;
+	background-color: #54769b;
+	color: #fff;
+
+	margin-bottom: 15px;
+
+	.container {
+		display: grid;
+		grid-template-columns: 185px 200px 585px;
+	}
+}
+
+.page-header__brand {
+	font-size: 30px;
+
+	margin-top: 12.5px;
+	color: #fff;
+}
+
+.page-header__icon {
+	float: left;
+	font-family: FontAwesome;
+	width: 15%;
+	height: 28px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+
+	margin-top: 16px;
+	padding: 3px 10px;
+	background-color: #3a597b;
+	color: #54769b;
+	cursor: text;
+}
+
+.page-header__search {
+	float: left;
+	font-family:'OpenSans', sans-serif;
+	width: 85%;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+	font-size: 12px;
+
+	padding: 8px 8px 7px 0px;
+	margin-top: 16px;
+	margin-bottom: 15px;
+
+	border: none;
+	outline: none;
+
+	background-color: #3a597b;
+	color: #ddd;
+
+	&:focus {
+		outline: none;
+	}
+
+	&::placeholder {
+		color: #ddd;
+	}
+}
+
+.page-header__nav {
+	margin-right: -19px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.page-header__item {
+	padding-top: 15px;
+	padding-right: 17.5px;
+	padding-bottom: 15px;
+	padding-left: 17.5px;
+
+	font-family: 'OpenSans', sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.110em;
+	line-height: 27px;
+	font-style: 600;
+	color:#fff;
+
+	.fa-play {
+		margin-left: 15px;
+	}
+
+	&:hover {
+		background-color: #3a597b;
+		color: #fff;
+	}
+}

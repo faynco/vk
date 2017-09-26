@@ -1,0 +1,177 @@
+.profile__left-side {
+	float: left;
+	width: 200px;
+	height: 100vh;
+	border-left: 0.5px solid rgba(0,0,0,0.07);
+	background-color: #f5f5f5;
+}
+
+.profile__photo {
+	cursor: pointer;
+	width: 100%;
+	height: 274px;
+}
+
+.profile__menu {
+	margin-top: 0px;
+	background-color: #eaeef2;
+}
+
+.profile__item {
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 13.5px;
+
+	a {
+		display: block;
+		padding: 11px 15px;
+		line-height: 0px;
+	}
+
+	.profile__notify { 
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 15px;
+		padding: 4.5px 6px;
+		border-radius: 2px;
+
+		font-size: 11px;
+		background-color: #fff;
+
+		.fa {
+			color: #54769b;
+		}
+	}
+
+	&:last-child {
+		margin-bottom:0;
+		padding-bottom:5px;
+	}
+}
+
+.profile__todo {
+	text-align: center;
+	font-size: 11px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 15px 15px 14px;
+	background-color: #dce2e8;
+
+	.profile__percent {
+		text-align: right;
+		display:inline-block;
+		width:100%;
+		height: 20px;
+		background-color: #54769b;
+		color: #fff;
+		margin-bottom: 6px;
+
+		&:after {
+			display:inline-block;
+			float:right;
+
+			content: "";
+
+			margin-left: 5px;
+			width: 6.5%;
+			height: 20px;
+			background-color: #ffffff;
+		}
+	}
+
+	.profile__percent-notify { 
+		display: inline-block;
+		padding: 10px 3px;
+		margin-left: 7px;
+		line-height: 0;
+		border-radius: 2px;
+
+		font-size: 11px;
+		background-color: #fff;
+
+		.fa {
+			color: #3a597b;
+		}
+	}
+}
+
+.profile__count {
+			display: inline-block;
+			padding: 10px 3px;
+			margin-left: 10px;
+			line-height: 0;
+			border-radius: 2px;
+
+			font-size: 11px;
+			background-color: #dce2e8;
+			color: #000; 
+}
+
+.profile__friends-all,
+.profile__friends-best,
+.profile__friends-online {
+	padding: 12px 15px 6px;
+
+	.profile__friends-header {
+		position: relative;
+		color: #000;
+	}
+
+	.profile__friends-reload {
+		float: right;
+		.fa {
+			color: #3a597b; 
+		}
+	}
+
+	.profile__friends-photo {
+		width: 50px;
+		height: 50px;
+	}
+
+	.profile__friends-name {
+		display: block;
+		font-size: 11px;
+		text-align: center;
+		margin-top: 3px;
+		line-height: 15px;
+	}
+}
+
+.profile__friends-all {
+
+	.profile__friends-items {
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 11px 10px;
+	}
+}
+
+.profile__friends-best,
+.profile__friends-online {
+	.profile__friends-items {
+		margin-top: 10px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 11px 10px;
+	}
+}
+
+.profile__friends-online {
+	.profile__friends-header {
+		margin-left: 15px;
+	}
+
+		.fa-circle {
+			position: absolute;
+			color: green;
+			font-size: 6px;
+			top: 4.5px;
+			left: -15px;
+		}
+}

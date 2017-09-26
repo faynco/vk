@@ -1,0 +1,95 @@
+*, *:before, *:after {
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 13px;
+	line-height: 22px;
+	font-family: 'OpenSans', sans-serif;
+	color: #3c3c3c;
+	font-style: 400;
+	letter-spacing: 0.04em;
+	background-color: #efefef;
+}
+
+h1 {
+	font-family: 'OpenSans', sans-serif;
+	font-size: 20px;
+	line-height: 27px;
+	font-style: 400;
+
+}
+
+h2 {
+	font-family: 'OpenSans', sans-serif;
+	font-size: 13px;
+	line-height: 27px;
+	font-style: 600;
+	color:#3c3c3c;
+
+}
+
+h3 {
+	font-family: 'OpenSans', sans-serif;
+	font-size: 22px;
+	line-height: 125px;
+	font-style: 400;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	font-size: 12px;
+	line-height: 23px;
+	text-decoration: none;
+	color: #3c3c3c;	
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+.btn {
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+
+	color: #fff;
+	background-color: #212121;
+
+	border: 1px solid rgba(0,0,0, 0.2);
+
+	padding: 18px 30px;
+
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+	&:hover {
+		border: 1px solid #ccc;
+		text-decoration: none;
+		color: #333;
+		background-color: #fff;
+		border: 1px solid;
+	}
+
+	&:active {
+		background-color: #ddd;
+		text-decoration: none;
+		border: 1px solid #aaa;
+		color: #000;
+	}
+}
