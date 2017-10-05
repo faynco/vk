@@ -434,7 +434,7 @@ a {
 .sidebar {
   float: left;
   width: 184.5px;
-  height: 100vh;
+  height: 100%;
   background-color: #f5f5f5;
 }
 .sidebar__nav {
@@ -551,14 +551,14 @@ a.sidebar__notification-link {
 .profile__left-side {
   float: left;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   border-left: 0.5px solid rgba(0, 0, 0, 0.07);
   background-color: #f5f5f5;
 }
 .profile__photo {
   cursor: pointer;
   width: 100%;
-  height: 274px;
+  height: 271px;
 }
 .profile__menu {
   margin-top: 0px;
@@ -568,17 +568,23 @@ a.sidebar__notification-link {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 13.5px;
 }
 .profile__item a {
   display: block;
-  padding: 11px 15px;
+  padding: 18px 15px;
   line-height: 0px;
+}
+.profile__item a:hover {
+  background-color: #54769b;
+  color: #fff;
+}
+.profile__item a:hover .fa {
+  color: #fff;
 }
 .profile__item .profile__notify {
   display: block;
   position: absolute;
-  top: 0px;
+  top: 7px;
   right: 15px;
   padding: 4.5px 6px;
   border-radius: 2px;
@@ -588,16 +594,15 @@ a.sidebar__notification-link {
 .profile__item .profile__notify .fa {
   color: #54769b;
 }
-.profile__item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 5px;
+.profile__item:first-child {
+  margin-top: -7px;
 }
 .profile__todo {
   text-align: center;
   font-size: 11px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 15px 15px 14px;
+  padding: 14px 15px 14px;
   background-color: #dce2e8;
 }
 .profile__todo .profile__percent {
@@ -642,9 +647,9 @@ a.sidebar__notification-link {
 .profile__friends-online {
   padding: 12px 15px 6px;
 }
-.profile__friends-all .profile__friends-header,
-.profile__friends-best .profile__friends-header,
-.profile__friends-online .profile__friends-header {
+.profile__friends-all .profile__header,
+.profile__friends-best .profile__header,
+.profile__friends-online .profile__header {
   position: relative;
   color: #000;
 }
@@ -690,7 +695,7 @@ a.sidebar__notification-link {
       grid-template-rows: 1fr;
   grid-gap: 11px 10px;
 }
-.profile__friends-online .profile__friends-header {
+.profile__friends-online .profile__header {
   margin-left: 15px;
 }
 .profile__friends-online .fa-circle {
@@ -699,6 +704,35 @@ a.sidebar__notification-link {
   font-size: 6px;
   top: 4.5px;
   left: -15px;
+}
+.profile__groups {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding: 7px 15px;
+}
+.profile__groups-item a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px auto;
+      grid-template-columns: 50px auto;
+  grid-gap: 11px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.profile__groups-item a .profile__groups-image {
+  width: 50px;
+  height: 50px;
+}
+.profile__groups-item a .profile__groups-name {
+  color: #000;
+  font-weight: 400;
+  display: block;
+  margin-bottom: -4px;
+}
+.profile__groups-item a .profile__groups-desc {
+  color: #666;
+  display: block;
+  font-size: 11px;
 }
 @media (min-width: 768px){
   .container{
